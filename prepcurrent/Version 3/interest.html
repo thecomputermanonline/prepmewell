@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>..:: Trish Academy ::..</title>
+		<meta name="tittle" content="">
+		<link href="css/style.css" rel="stylesheet">
+		<link media="all" rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="pt-70 bg-gray">
+		<header id="header" class="main-header student-header">
+			<div class="header-holder">
+				<div class="logo">
+					<a href="homepage-loggedin.html"><img src="images/logo.png" width="150" height="62" alt="Trish Academy"></a>
+				</div>
+				<a href="#" class="nav-opener"><span></span></a>
+				<div class="nav-holder">
+					<nav id="nav">
+						<ul class="nav center-nav">
+							<li><a href="student-dashboard.html">Dashboard</a></li>
+							<li><a href="take-test.html">Take Test</a></li>
+							<li class="notification"><a href="feedbacks.html">Feedback</a></li>
+							<li><a href="history.html">History</a></li>
+						</ul>
+					</nav>
+					
+				</div>
+				<ul class="profile-menu">
+					<li class="d-none d-md-block">
+						<a href="profile.html" class="name">Tolu Arowoselu</a>
+						<span class="score">Target score: 7.5</span>
+					</li>
+					<li class="profile_ic dropdown">
+						<a href="#" class="dropdown-toggle" role="button" id="profile_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="images/header/profile_ic.jpg" alt="">
+						</a>
+						<div class="dropdown-menu" aria-labelledby="profile_dropdown">
+							<a href="#" class="dropdown-item d-md-none">Tolu Arowoselu <span class="score d-block text-left">Target score: 7.5</span></a>
+							<a class="dropdown-item" href="profile.html">Profile Settings</a>
+							<a class="dropdown-item" href="interest.html">My interests</a>
+							<a class="dropdown-item" href="plans-new-user.html">Plans</a>
+							<a class="dropdown-item" href="account-settings.html">Account settings</a>
+							<a class="dropdown-item" href="#">Log out</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="account-settings profile style2 style3">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8 column-xl-9">
+						<h2 class="heading">My Interests</h2>
+						<div class="tabs-holder">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="study-tab" data-toggle="tab" href="#study" role="tab" aria-controls="study" aria-selected="true">Study Abroad</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="work-tab" data-toggle="tab" href="#work" role="tab" aria-controls="work" aria-selected="false">Work Abroad</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="relocate-tab" data-toggle="tab" href="#relocate" role="tab" aria-controls="relocate" aria-selected="false">Relocate Abroad</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="study" role="tabpanel" aria-labelledby="study-tab">
+									<form class="interest-form">
+										<h2>My Goals</h2>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="study-intent">What are you intending to study?</label>
+												<select class="custom-select" id="study-intent">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="Target">When are you expecting to study abroad?</label>
+												<select class="custom-select" id="Target">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-row mb-5">
+											<div class="form-group mb-md-0 col-md-6">
+												<label for="subject-intent">Which subject(s) are you intending to study?</label>
+												<input id="subject-intent" class="form-control" type="text" placeholder="Enter your subjects">
+											</div>
+											<div class="form-group mb-0 col-md-6">
+												<label for="destination">specify your study destination(S) (up to three)</label>
+												<input id="destination" class="form-control" type="password" placeholder="Enter study destination(s)">
+											</div>
+										</div>
+
+										<h2>My Future Plans</h2>
+
+										<span class="sub-title">A. English proficiency test</span>
+										<ul class="radios-holder">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="ielts">
+													<label for="ielts">IELTS</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="toefl">
+													<label for="toefl">TOEFL</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="toeic">
+													<label for="toeic">TOEIC</label>
+												</div>
+											</li>
+										</ul>
+
+										<span class="sub-title">B. Undergraduate Admissions Test</span>
+										<ul class="adm-test">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test1">
+													<label for="test1">UMAT - Undergraduate M`edical Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test2">
+													<label for="test2">GED - High School Diploma Equivalent</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test3">
+													<label for="test3">UKCAT - United Kingdom Clinical Aptitude Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test4">
+													<label for="test4">GCE/A Level - General Certificate of Education</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test5">
+													<label for="test5">SAT - Scholastic Assessment Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test6">
+													<label for="test6">ACT - Formerly American College TEsting Program or American College Test </label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test7">
+													<label for="test7">GED - General Equivalency Diploma</label>
+												</div>
+											</li>
+										</ul>
+
+										<span class="sub-title">C. Postgraduate / Professional Admission Tests</span>
+										<ul class="adm-test pb-5">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test8">
+													<label for="test8">GAMSAT - Graduate Medical Schools Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test9">
+													<label for="test9">LSAT - Law School Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test10">
+													<label for="test10">MAT - Miller Analogies Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test11">
+													<label for="test11">GRE - Graduate Record Examination</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test12">
+													<label for="test12">GMAT -  Graduate Management Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test13">
+													<label for="test13">MCAT - Medical College Admission Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test14">
+													<label for="test14">DAT - Dental Aptitude Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test15">
+													<label for="test15">OAT - Optometry Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test16">
+													<label for="test16">PCAT - Pharmacy College Admission Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test17">
+													<label for="test17">TEAS - Test of Essential Academic Skills</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test18">
+													<label for="test18">AHPAT - Allied Health Professions Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test19">
+													<label for="test19">LSAT - Law School Admissions Test</label>
+												</div>
+											</li>
+										</ul>
+										
+
+										<h2>My Background</h2>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="edu-level">What is your current/highest education level?</label>
+												<select class="custom-select" id="edu-level">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="recent-inst">What is your current or most recent institution?</label>
+												<input id="recent-inst" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="recent-prog">What is your current or most recent major/programme?</label>
+												<input id="recent-prog" class="form-control" type="text" placeholder="Example: law">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="avg-score">What was your average score/achievement at this level?</label>
+												<input id="avg-score" class="form-control" type="password" placeholder="Enter GPA score">
+											</div>
+										</div>
+										<div class="text-right mt-4">
+											<button class="btn full">Save</button>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+									<form class="interest-form">
+										<h2>My Goals</h2>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="work-intent">Where are you intending to work? </label>
+												<select class="custom-select" id="work-intent">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="current-job">Have you gotten a job yet?</label>
+												<select class="custom-select" id="current-job">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-row mb-5">
+											<div class="form-group mb-md-0 col-md-6">
+												<label for="career-path">What career path are you thnking of going into?</label>
+												<select class="custom-select" id="career-path">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group mb-0 col-md-6">
+												<label for="certification">Do you have certification to work in the choosen career field?</label>
+												<select class="custom-select" id="certification">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+										</div>
+
+										<h2>My Future Plans</h2>
+
+										<span class="sub-title">A. English proficiency test</span>
+										<ul class="radios-holder">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="work-ielts">
+													<label for="work-ielts">IELTS</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="work-toefl">
+													<label for="work-toefl">TOEFL</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="work-toeic">
+													<label for="work-toeic">TOEIC</label>
+												</div>
+											</li>
+										</ul>
+
+										<span class="sub-title">B. Undergraduate Admissions Test</span>
+										<ul class="adm-test">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test20">
+													<label for="test20">UMAT - Undergraduate M`edical Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test21">
+													<label for="test21">GED - High School Diploma Equivalent</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test22">
+													<label for="test22">UKCAT - United Kingdom Clinical Aptitude Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test23">
+													<label for="test23">GCE/A Level - General Certificate of Education</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test24">
+													<label for="test24">SAT - Scholastic Assessment Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test25">
+													<label for="test25">ACT - Formerly American College TEsting Program or American College Test </label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test26">
+													<label for="test26">GED - General Equivalency Diploma</label>
+												</div>
+											</li>
+										</ul>
+
+										<span class="sub-title">C. Postgraduate / Professional Admission Tests</span>
+										<ul class="adm-test pb-5">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test27">
+													<label for="test27">GAMSAT - Graduate Medical Schools Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test28">
+													<label for="test28">LSAT - Law School Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test29">
+													<label for="test29">MAT - Miller Analogies Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test30">
+													<label for="test30">GRE - Graduate Record Examination</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test31">
+													<label for="test31">GMAT -  Graduate Management Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test32">
+													<label for="test32">MCAT - Medical College Admission Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test33">
+													<label for="test33">DAT - Dental Aptitude Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test34">
+													<label for="test34">OAT - Optometry Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test35">
+													<label for="test35">PCAT - Pharmacy College Admission Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test36">
+													<label for="test36">TEAS - Test of Essential Academic Skills</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test37">
+													<label for="test37">AHPAT - Allied Health Professions Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test38">
+													<label for="test38">LSAT - Law School Admissions Test</label>
+												</div>
+											</li>
+										</ul>
+
+										<h2>My Background</h2>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="work-edu-level">What is your current/highest education level?</label>
+												<select class="custom-select" id="work-edu-level">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="work-recent-inst">What is your current or most recent institution?</label>
+												<input id="work-recent-inst" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="work-recent-prog">What is your current or most recent major/programme?</label>
+												<input id="work-recent-prog" class="form-control" type="text" placeholder="Example: law">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="work-avg-score">What was your average score/achievement at this level?</label>
+												<input id="work-avg-score" class="form-control" type="password" placeholder="Enter GPA score">
+											</div>
+										</div>
+										<div class="text-right mt-4">
+											<button class="btn full">Save</button>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane fade" id="relocate" role="tabpanel" aria-labelledby="relocate-tab">
+									<form class="interest-form">
+										<h2>My Goals</h2>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="relocate-intent">Where are you trying to relocate to? </label>
+												<select class="custom-select" id="relocate-intent">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="eligibilty">Are You eligible for the country's relocation process?</label>
+												<select class="custom-select" id="eligibilty">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-row mb-5">
+											<div class="form-group mb-md-0 col-md-6">
+												<label for="consultation" class="d-flex align-items-center">Would you like consultation on your relocation?
+													<span class="tool_tip">
+														<a href="#" class="render-tooltip" data-original-title="" title="">
+														  <img src="images/icons/info_ic.svg" alt="">
+														</a>
+														<span class="custom-tooltip" role="tooltip">
+														  <span class="arrow"></span>
+														  <span class="tooltip-inner">One of our consultants would reach out to you and mentor you through your relocation process.</span>
+														</span>
+													</span>
+												</label>
+												<select class="custom-select" id="consultation">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+										</div>
+
+										<h2>My Future Plans</h2>
+
+										<span class="sub-title">A. English proficiency test</span>
+										<ul class="radios-holder">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="relocate-ielts">
+													<label for="relocate-ielts">IELTS</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="relocate-toefl">
+													<label for="relocate-toefl">TOEFL</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="relocate-toeic">
+													<label for="relocate-toeic">TOEIC</label>
+												</div>
+											</li>
+										</ul>
+
+										<span class="sub-title">B. Undergraduate Admissions Test</span>
+										<ul class="adm-test">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test39">
+													<label for="test39">UMAT - Undergraduate M`edical Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test40">
+													<label for="test40">GED - High School Diploma Equivalent</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test41">
+													<label for="test41">UKCAT - United Kingdom Clinical Aptitude Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test42">
+													<label for="test42">GCE/A Level - General Certificate of Education</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test43">
+													<label for="test43">SAT - Scholastic Assessment Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test45">
+													<label for="test45">ACT - Formerly American College TEsting Program or American College Test </label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test46">
+													<label for="test46">GED - General Equivalency Diploma</label>
+												</div>
+											</li>
+										</ul>
+
+										<span class="sub-title">C. Postgraduate / Professional Admission Tests</span>
+										<ul class="adm-test pb-5">
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test47">
+													<label for="test47">GAMSAT - Graduate Medical Schools Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test48">
+													<label for="test48">LSAT - Law School Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test49">
+													<label for="test49">MAT - Miller Analogies Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test50">
+													<label for="test50">GRE - Graduate Record Examination</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test51">
+													<label for="test51">GMAT -  Graduate Management Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test52">
+													<label for="test52">MCAT - Medical College Admission Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test53">
+													<label for="test53">DAT - Dental Aptitude Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test54">
+													<label for="test54">OAT - Optometry Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test55">
+													<label for="test55">PCAT - Pharmacy College Admission Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test56">
+													<label for="test56">TEAS - Test of Essential Academic Skills</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test57">
+													<label for="test57">AHPAT - Allied Health Professions Admissions Test</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox-radio">
+													<input type="checkbox" id="test58">
+													<label for="test58">LSAT - Law School Admissions Test</label>
+												</div>
+											</li>
+										</ul>
+
+										<h2>My Background</h2>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="relocate-edu-level">What is your current/highest education level?</label>
+												<select class="custom-select" id="relocate-edu-level">
+													<option selected>Please select</option>
+													<option value="1">One</option>
+													<option value="2">Two</option>
+													<option value="3">Three</option>
+												</select>
+											</div>
+											<div class="form-group col-md-6">
+												<label for="relocate-recent-inst">What is your current or most recent institution?</label>
+												<input id="relocate-recent-inst" class="form-control" type="text" placeholder="Example: Middlesex University, Mauritius">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="form-group col-md-6">
+												<label for="relocate-recent-prog">What is your current or most recent major/programme?</label>
+												<input id="relocate-recent-prog" class="form-control" type="text" placeholder="Example: law">
+											</div>
+											<div class="form-group col-md-6">
+												<label for="relocate-avg-score">What was your average score/achievement at this level?</label>
+												<input id="relocate-avg-score" class="form-control" type="password" placeholder="Enter GPA score">
+											</div>
+										</div>
+										<div class="text-right mt-4">
+											<button class="btn full">Save</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-4 column-xl-3">
+						<div class="date">23:14, Thursday, Feb 26, 2018</div>
+						
+						<div class="right-container style2">
+							<div class="inner">
+								<strong class="heading d-block mb-2 pb-0">Important Factors To consider</strong>
+								<span class="sub-title d-block">RE-ARRANGE CARDS IN ORDER OF IMPORTANCE.</span>
+								<ul class="cards-list">
+									<li class="box">SAFETY</li>
+									<li class="box">LESS INTERNATIONAL STUDENTS</li>
+									<li class="box">LOW TUTION FEES / COST OF LIVING</li>
+									<li class="box">LOCATION</li>
+									<li class="box">RANKING</li>
+									<li class="box">WORK OPPORTUNITY</li>
+									<li class="box">EASY TO PASS</li>
+									<li class="box">IMMIGRATION</li>
+								</ul>
+							</div>
+							<div class="inner">
+								<strong class="heading d-block">My Financial Plan</strong>
+								<form>
+									<div class="form-group">
+										<label for="sup-select">Financial Support</label>
+										<select class="custom-select" id="sup-select">
+											<option selected>Please select</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="fin-sup">Financial Support</label>
+										<input id="fin-sup" class="form-control" type="text" placeholder="Enter your budget">
+									</div>
+									<div class="btn-container">
+										<button class="btn full btn-block" type="submit">Save Details</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+		<script src="js/draganddrop.js"></script>
+		<script src="js/jquery.main.js" defer></script>
+
+		<script>
+			
+			$('.render-tooltip').tooltip();
+			
+
+		  $(function() {
+
+		    //normal list
+		    $('ul.cards-list').sortable({
+		      autocreate: false,
+		      update: function(evt) {
+		        console.log(JSON.stringify($(this).sortable('serialize')));
+		      }
+		    });
+
+		    //draggable
+		    $('.drag').draggable();
+		    $('.draggables').draggable({delegate: 'button', placeholder: true});
+		    $('.draghandle').draggable({handle: '.handle', placeholder: true});
+		    $('.dragdrop').draggable({
+		      revert: true,
+		      placeholder: true,
+		      droptarget: '.drop',
+
+		      drop: function(evt, droptarget) {
+		        $(this).appendTo(droptarget).draggable('destroy');
+		      }
+		    });
+
+		  });
+		</script>
+	</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>..:: Trish Academy ::..</title>
+    <meta name="tittle" content="">
+    <link href="css/style.css" rel="stylesheet">
+    <link media="all" rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="pt-70 bg-gray">
+    <header id="header" class="main-header student-header">
+      <div class="header-holder">
+        <div class="logo">
+          <a href="homepage-loggedin.html"><img src="images/logo.png" width="150" height="62" alt="Trish Academy"></a>
+        </div>
+        <a href="#" class="nav-opener"><span></span></a>
+        <div class="nav-holder">
+          <nav id="nav">
+            <ul class="nav center-nav">
+              <li><a href="student-dashboard.html">Dashboard</a></li>
+              <li><a href="take-test.html">Take Test</a></li>
+              <li class="notification"><a href="feedbacks.html">Feedback</a></li>
+              <li><a href="history.html">History</a></li>
+            </ul>
+          </nav>
+          
+        </div>
+        <ul class="profile-menu">
+          <li class="d-none d-md-block">
+            <a href="profile.html" class="name">Tolu Arowoselu</a>
+            <span class="score">Target score: 7.5</span>
+          </li>
+          <li class="profile_ic dropdown">
+            <a href="#" class="dropdown-toggle" role="button" id="profile_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="images/header/profile_ic.jpg" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="profile_dropdown">
+              <a href="#" class="dropdown-item d-md-none">Tolu Arowoselu <span class="score d-block text-left">Target score: 7.5</span></a>
+              <a class="dropdown-item" href="profile.html">Profile Settings</a>
+              <a class="dropdown-item" href="interest.html">My interests</a>
+              <a class="dropdown-item" href="plans-new-user.html">Plans</a>
+              <a class="dropdown-item" href="#">Account settings</a>
+              <a class="dropdown-item" href="#">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="account-settings profile">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 column-xl-9">
+            <h2 class="heading">Profile Settings</h2>
+
+            <div class="inner">
+              <div class="profile-container">
+                <a href="#" class="profile-pic">
+                  <span class="img" style="background-image: url('images/header/profile_ic.jpg')"></span>
+                  <span class="camera-icon">
+                    <span class="holder">
+                      <img src="images/camera.svg" alt="" width="24" height="20">
+                      <span class="text">Change your <br>picture</span>
+                    </span>
+                  </span>
+
+                </a>
+
+                <div class="profile-img d-none">
+                  <div class="img-heading">Upload new picture</div>
+
+                  <div class="drag-drop-con">
+                    <div class="icon">
+                      <img src="images/icons/upload_ic.svg" alt="">
+                    </div>
+
+                    <div class="drag">
+                      <p>Drag and drop here</p>
+                      <p>or</p>
+                      <p>
+                        <input type="file" class="hide" id="browse">
+                        <label for="browse" class="link">browse</label>
+                      </p>
+                    </div>
+                  </div>
+
+                  <button type="button" class="btn btn-block">UPLOAD</button>
+
+                  <div class="file-format">
+                    * Only following file types are supported:
+                    <div class="formats">JPG, JPEG, PNG (Below 64 MB)</div>
+                  </div>
+                </div>
+              </div>
+
+              <form>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="f_name">First Name</label>
+                      <input type="text" placeholder="First Name" class="form-control" id="f_name">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="l_name">Last Name</label>
+                      <input type="text" placeholder="Last Name" class="form-control" id="l_name">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" placeholder="Email" class="form-control" id="email">
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <label>Gender</label>
+                    
+                    <div class="checkbox_small">
+                      <div class="check-inner">
+                        <input type="radio" id="male" name="gender" checked>
+                        <label for="male">Male</label>
+                      </div>
+                      
+                      <div class="check-inner">
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="country">Country</label>
+                      <select class="custom-select" id="country" name="country">
+                        <option value="">Nigeria</option>
+                        <option value="">New Zealand</option>
+                        <option value="">Niger</option>
+                        <option value="">Norway</option>
+                        <option value="">Oman</option>
+                        <option value="">Pakistan</option>
+                      </select>
+                      
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="state">State</label>
+                      <select class="custom-select" name="state" id="state">
+                        <option value="">Lagos</option>
+                        <option value="">Lagos 2</option>
+                        <option value="">Lagos 3</option>
+                        <option value="">Lagos 4</option>
+                        <option value="">Lagos 5</option>
+                        <option value="">Lagos 6</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-con">
+                  <button class="btn full" type="submit">Update</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-5 column-xl-3">
+            <div class="date">23:14, Thursday, Feb 26, 2018</div>
+            
+            <form>
+              <div class="right-container">
+                <div class="inner">
+                  <div class="heading">My Target Score</div>
+                  
+                  <div class="accordion" id="accordionOne">
+                      <div class="accord-inner">
+                        <h2 class="collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span>Previous Score: 7.5</span>
+                          <i class="fa fa-plus"></i>
+                          <i class="fa fa-minus"></i>
+                        </h2>
+
+                        <div id="collapseOne" class="collapse" data-parent="#accordionOne">
+                          <div class="collapse-holder">
+                            <div class="progress-area">
+                              <span class="title">Listening: 7.5</span>
+                              <input class="score-range" type="text" min="3" max="9" value="7.5" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+
+                              <span class="title">Reading: 8.5</span>
+                              <input class="score-range" type="text" min="3" max="9" value="8.5" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+
+                              <span class="title">Speaking: 7.0</span>
+                              <input class="score-range" type="text" min="3" max="9" value="7" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+
+                              <span class="title">Writing: 8.5</span>
+                              <input class="score-range" type="text" min="3" max="9" value="8.5" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accord-inner">
+                        <h2 class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <span>Target Score: 9.0</span>
+                          <i class="fa fa-plus"></i>
+                          <i class="fa fa-minus"></i>
+                        </h2>
+
+                        <div id="collapseTwo" class="collapse" data-parent="#accordionOne">
+                          <div class="collapse-holder">
+                            <div class="progress-area">
+                              <span class="title">Listening: 7.5</span>
+                              <input class="score-range" type="text" min="3" max="9" value="7.5" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+
+                              <span class="title">Reading: 8.5</span>
+                              <input class="score-range" type="text" min="3" max="9" value="8.5" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+
+                              <span class="title">Speaking: 7.0</span>
+                              <input class="score-range" type="text" min="3" max="9" value="7" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+
+                              <span class="title">Writing: 8.5</span>
+                              <input class="score-range" type="text" min="3" max="9" value="8.5" name="points" step="0.5">
+                              <ul class="score-values">
+                                <li>3.0</li>
+                                <li>9.0</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="praticing-reason">
+                    <div class="reason-head">My reason for practicing IELTS IS:</div>
+
+                    <div class="checkbox-radio">
+                      <div class="check-inner">
+                        <input type="checkbox" id="work-abroad">
+                        <label for="work-abroad">I’m intending to work abroad</label>
+                      </div>
+                      
+                      <div class="check-inner">
+                        <input type="checkbox" id="relocate">
+                        <label for="relocate">I’m intending to relocate</label>
+                      </div>
+                      
+                      <div class="check-inner">
+                        <input type="checkbox" id="study-abroad">
+                        <label for="study-abroad">I’m intending to study abroad</label>
+                      </div>
+                      
+                      <div class="check-inner other">
+                        <input type="checkbox" id="others">
+                        <label for="others">Others
+                          <input type="text" class="form-control w-100 mt-3 bg-transparent" placeholder="Please specify">
+                        </label>
+                      </div>
+                    </div>
+
+                    <button class="btn full btn-block">Update</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
+     <script src="js/jquery.main.js" defer></script>
+    <script>
+      AOS.init();
+
+      $(".hamburger").click(function() {
+        $(".nav-container").slideToggle();
+      });
+
+      $(document).ready(function() {
+        $('.select2').select2({
+          minimumResultsForSearch: -1,
+        });
+      });
+
+      $(".close-alert").click(function(e) {
+        e.preventDefault();
+        $(this).parent().fadeOut();
+      })
+      
+     /* $(".profile-pic").click(function(e) {
+        e.preventDefault();
+        $(".profile-img").slideToggle();
+      })*/
+    </script>
+  </body>
+</html>
