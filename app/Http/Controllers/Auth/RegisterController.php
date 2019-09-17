@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
@@ -52,6 +53,9 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'userRole' => ['required', 'string', 'max:10'],
+//            'password' => 'min:6|required_with:password_confirmation|same:password_confirmation',
+//            'password_confirmation' => 'min:6'
         ]);
     }
 
@@ -63,10 +67,27 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+
+
+//dd($data);
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+
+        $role = Role::where('name', '=', $data['userRole'])->firstOrFail();
+        //$user->attachRole($role);
+       $user->roles()->attach($role);
+        return $user;
+
+//
+//        return User::create([
+//            'name' => $data['name'],
+//            'email' => $data['email'],
+//            'password' => Hash::make($data['password']),
+//        ///]);
+//        ])->assignRole($data['userRole']);
+
     }
 }

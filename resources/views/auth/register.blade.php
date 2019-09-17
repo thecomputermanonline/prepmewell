@@ -5,7 +5,7 @@
 @section('content')
     <form method="POST" action="{{ route('register') }}">
         @csrf
-        <input type="hidden" id="userCategoryId" name="userCategoryId" value="student">
+        <input type="hidden" id="userRole" name="userRole" value="l">
         <div class="checkbox_big">
             <div  class="inner">
 
@@ -68,7 +68,7 @@
         <div class="form-group">
             <label for="password-confirm">Confirm Password</label>
             <div class="with-icon">
-                <input type="password" id="password-confirm" name="password-confirmation" class="form-control" placeholder="Enter password again" required autocomplete="new-password">
+                <input type="password" id="password_confirm" name="password_confirmation" class="form-control" placeholder="Enter password again" required autocomplete="new-password">
 
                 <a href="#" class="show-password">
                     <img src="images/icons/eye.svg" alt="">

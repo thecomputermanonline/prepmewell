@@ -31,7 +31,7 @@ class SocialController extends Controller
 
         $user = $this->createUser($getInfo, $provider);
 
-        auth()->login($user);
+        auth()->login($user, true);
 
        //return redirect()->route('dashboard');
         return redirect()->to('/dashboard');
