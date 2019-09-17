@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b6689ea-4da6-45e9-9581-94612083709c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SocialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SocialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/togg.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/togg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="6b6689ea-4da6-45e9-9581-94612083709c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +269,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="19" />
-    <option name="y" value="53" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="841" />
   </component>
@@ -377,15 +370,23 @@
       <workItem from="1566798117778" duration="586000" />
       <workItem from="1567403712062" duration="598000" />
       <workItem from="1568306080454" duration="6947000" />
-      <workItem from="1568399946539" duration="46118000" />
+      <workItem from="1568399946539" duration="46257000" />
     </task>
+    <task id="LOCAL-00001" summary="up date on role set up">
+      <created>1568701712878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568701712878</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54668000" />
+    <option name="totallyTimeSpent" value="54807000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="53" width="1440" height="841" extended-state="0" />
+    <frame x="19" y="30" width="1440" height="841" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18025751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -411,6 +412,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="up date on role set up" />
+    <option name="LAST_COMMIT_MESSAGE" value="up date on role set up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
