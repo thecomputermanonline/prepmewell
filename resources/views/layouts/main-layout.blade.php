@@ -21,6 +21,11 @@
 {{--    </style>--}}
 </head>
 <body class="no-pad">
+@if (session('status'))
+    <div class="alert alert-success" role="alert">
+        {{ session('status') }}
+    </div>
+@endif
 <div id="wrapper">
     @guest
     <header id="header" >
@@ -55,35 +60,10 @@
 
 
                                 @else
-                <ul class="profile-menu">
-                    <li class="d-none d-md-block">
-                        <a href="profile.html" class="name">{{ Auth::user()->name }}</a>
-                        <span class="score">Target score: 7.5</span>
-                    </li>
-                    <li class="profile_ic dropdown">
-                        <a href="#" class="dropdown-toggle" role="button" id="profile_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="images/header/profile_ic.jpg" alt="">
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="profile_dropdown">
-                            <a href="#" class="dropdown-item d-md-none">Tolu Arowoselu <span class="score d-block text-left">Target score: 7.5</span></a>
-                            <a class="dropdown-item" href="profile.html">Profile Settings</a>
-                            <a class="dropdown-item" href="interest.html">My interests</a>
-                            <a class="dropdown-item" href="plans-new-user.html">Plans</a>
-                            <a class="dropdown-item" href="account-settings.html">Account settings</a>
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
-                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
 
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
+                @include('profile-menu')
 
 
-                        </div>
-                    </li>
-                </ul>
 
                                 @endguest
 
