@@ -9,7 +9,13 @@
     <li class="profile_ic dropdown">
         <a href="#" class="dropdown-toggle" role="button" id="profile_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 {{--            <img src="images/header/profile_ic.jpg" alt="">--}}
-            <img alt="{{Auth::user()->name}}" src="{{Auth::user()->image}}"/>
+
+            @if(Auth::user()->image)
+                <img src="images/header/{{ Auth::user()->image }}" />
+            @else
+                <img alt="{{Auth::user()->name}}" src="images/header/profile_ic.jpg" />
+            @endif
+
         </a>
         <div class="dropdown-menu" aria-labelledby="profile_dropdown">
             <a href="#" class="dropdown-item d-md-none">{{Auth::user()->name}}
