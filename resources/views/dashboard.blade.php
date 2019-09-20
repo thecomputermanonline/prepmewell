@@ -14,7 +14,7 @@
 
     @endif
     @if (auth()->user()->hasRole('student'))
-
+        <div class="account-settings">
         <div class="container">
 
 
@@ -275,7 +275,7 @@
             </div>
         </div>
     </div>
-
+        </div>
 
     @endif
 

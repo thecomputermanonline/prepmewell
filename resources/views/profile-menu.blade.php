@@ -24,10 +24,11 @@
                 @endif
 
 
-            <a class="dropdown-item" href="profile.html">Profile Settings</a>
-            <a class="dropdown-item" href="interest.html">My interests</a>
-            <a class="dropdown-item" href="plans-new-user.html">Plans</a>
-            <a class="dropdown-item" href="account-settings.html">Account settings</a>
+            <a class="dropdown-item" href="/my-profile">Profile Settings</a>
+            <a class="dropdown-item" href="/my-interests">My interests</a>
+            <a class="dropdown-item" href="/billing">My-Plans</a>
+            <a class="dropdown-item" href="/my-testimonials"> My Testimonals</a>
+            <a class="dropdown-item" href="/my-proile-edit">My Account</a>
             <a class="dropdown-item" href="{{ route('logout') }}"
                onclick="event.preventDefault();
                                 document.getElementById('logout-form').submit();">

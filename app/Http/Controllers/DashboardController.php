@@ -25,4 +25,16 @@ class DashboardController extends Controller
     {
         return view('dashboard');
     }
+    public function tests_dashboard()
+    {
+        return view('tests-dashboard');
+    }
+    public function feedback()
+    {
+        return view('feedback');
+    }
+    public function history()
+    {
+        return view('history');
+    }
 }

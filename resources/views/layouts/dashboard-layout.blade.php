@@ -20,16 +20,17 @@
 <header id="header" class="main-header student-header">
     <div class="header-holder">
         <div class="logo">
-            <a href="homepage-loggedin.html"><img src="images/logo.png" width="150" height="62" alt="Trish Academy"></a>
+            <a href="/"><img src="images/logo.png" width="150" height="62" alt="Trish Academy"></a>
         </div>
         <a href="#" class="nav-opener"><span></span></a>
         <div class="nav-holder">
             <nav id="nav">
                 <ul class="nav center-nav">
-                    <li class="current"><a href="student-dashboard.html">Dashboard</a></li>
-                    <li><a href="take-test.html">Take Test</a></li>
-                    <li class="notification"><a href="feedbacks.html">Feedback</a></li>
-                    <li><a href="history.html">History</a></li>
+                    <li class="current"><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/tests-dashboard">Take Test</a></li>
+                    <li class="notification"><a href="/feedback">Feedback</a></li>
+                    <li><a href="/history">History</a></li>
+                    <li><a href="/discussions">Join the Discussion</a></li>
                 </ul>
             </nav>
 
@@ -58,9 +59,9 @@
 </header>
 
 
-<div class="account-settings">
+
     @yield('content')
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 
